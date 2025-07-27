@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="color-scheme" content="dark">
+
+        <title>Neopixel_sim</title>
+
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+    </head>
+
+    <body>
+        <canvas class="display" width="1800" height="70"></canvas>
+        <br>
+
+        r:
+        <input class="dmx_r" type="range" min="0" max="255" value="0" oninput="color_changed();">
+        g:
+        <input class="dmx_g" type="range" min="0" max="255" value="0" oninput="color_changed();">
+        b:
+        <input class="dmx_b" type="range" min="0" max="255" value="0" oninput="color_changed();">
+        <!-- ww:
+        <input class="dmx_ww" type="range" min="1" max="255" value="0"> -->
+        dim:
+        <input class="dmx_dim" type="range" min="0" max="255" value="0" oninput="dimmer_changed();">
+        shuttter:
+        <input class="dmx_shutter" type="range" min="0" max="255" value="0" oninput="shutter_changed();">
+        frq:
+        <input class="dmx_freq" type="range" min="0" max="255" value="0" oninput="wave_changed();">
+        speed:
+        <input class="dmx_speed" type="range" min="0" max="255" value="0" oninput="wave_changed();">
+    </body>
+
+    <script src="js/index.js"></script>
+</html>
